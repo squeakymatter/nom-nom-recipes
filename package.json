@@ -4,9 +4,10 @@
   "description": "A recipe app made with React-GraphQL-MongoDB and more",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon server.js",
-    "client": "cd client && npm start",
-    "dev": "concurrently --names \"server,client\" \"npm run server --silent\" \"npm run client --silent\""
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
