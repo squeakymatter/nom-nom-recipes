@@ -1,0 +1,36 @@
+{
+  "name": "nom-nom-recipes",
+  "version": "1.0.0",
+  "description": "A recipe app made with React-GraphQL-MongoDB and more",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently --names \"server,client\" \"npm run server --silent\" \"npm run client --silent\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/squeakymatter/nom-nom-recipes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/squeakymatter/nom-nom-recipes/issues"
+  },
+  "homepage": "https://github.com/squeakymatter/nom-nom-recipes#readme",
+  "dependencies": {
+    "apollo-server-express": "^2.24.0",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "graphql": "^15.5.0",
+    "graphql-tools": "^7.0.5",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
